@@ -1,4 +1,5 @@
 package ru.robert_grammy.ine_markup.model;
 
-public class Entity {
+public record Entity(String text, int startIndexFromText, int endIndexFromText, String type, String value) {
+
 }

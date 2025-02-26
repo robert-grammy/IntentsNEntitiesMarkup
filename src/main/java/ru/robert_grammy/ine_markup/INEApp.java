@@ -1,8 +1,8 @@
-package ru.robert_grammy.ine_markup.intentsnentitiesmarkup;
+package ru.robert_grammy.ine_markup;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import ru.robert_grammy.ine_markup.intentsnentitiesmarkup.controller.global.AppController;
+import ru.robert_grammy.ine_markup.controller.global.AppController;
 
 public class INEApp extends Application {
 
@@ -30,8 +30,8 @@ public class INEApp extends Application {
     public void start(Stage stage) throws Exception {
         instance = this;
         controller = new AppController(stage);
-        setController(controller);
         controller.initialize();
+        setController(controller);
     }
 
 }
